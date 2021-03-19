@@ -11,8 +11,9 @@ namespace Tcc.SegurancaQA.Legado.Dto
         public string Descricao { get; set; }
         public EArea Area { get; set; }
         public bool Status { get; set; }
-        
+
         //utilizado nas integrações
+        public int IntegracaoId { get; set; }
         public DateTime? IntegradoEm { get; set; }
         public string Integracao { get; set; }
     }
