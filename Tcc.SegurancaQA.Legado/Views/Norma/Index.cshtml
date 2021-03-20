@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Tcc.SegurancaQA.Legado.Mvc.Models.Norma.NormaModel>
+
+@{
+    ViewBag.Title = "Normas";
+}
+
+<h2>Normas</h2>
+
+<table class="table">
+    <tr>
+        <th>Código</th>
+        <th>Descrição</th>
+        <th>Área</th>
+        <th>Status</th>
+        <th>Integrado Em</th>
+        <th>Integração</th>
+    </tr>
+
+    @foreach (var item in Model) 
+    {
+        <tr>
+            <td>@Html.DisplayFor(m => item.Codigo)</td>
+            <td>@Html.DisplayFor(m => item.Descricao)</td>
+            <td>@Html.DisplayFor(m => item.Area)</td>
+            <td>@Html.Raw(item.Status)</td>
+            <td>@Html.DisplayFor(m => item.IntegradoEm)</td>
+            <td>@Html.DisplayFor(m => item.Integracao)</td>
+        </tr>
+    }
+
+</table>

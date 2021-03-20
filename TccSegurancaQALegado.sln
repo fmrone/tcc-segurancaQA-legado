@@ -9,7 +9,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tcc.SegurancaQA.Legado.Busi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tcc.SegurancaQA.Legado.Data", "Tcc.SegurancaQA.Legado.DAL\Tcc.SegurancaQA.Legado.Data.csproj", "{FE2E337C-19A3-455F-982A-99BF1F0874E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tcc.SegurancaQA.Legado.Dto", "Tcc.SegurancaQA.Legado.Dto\Tcc.SegurancaQA.Legado.Dto.csproj", "{4BB173D5-D397-4740-B887-2336EC8DD4C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tcc.SegurancaQA.Legado.Dto", "Tcc.SegurancaQA.Legado.Dto\Tcc.SegurancaQA.Legado.Dto.csproj", "{4BB173D5-D397-4740-B887-2336EC8DD4C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Camada de Apresentação", "1. Camada de Apresentação", "{EC5EE0EE-B7CD-4360-B5C4-AA6FF7D7372D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Camada de Negócio", "2. Camada de Negócio", "{68F46C52-1ABC-4D3D-A964-421235F3D4DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Camada de Dados", "3. Camada de Dados", "{95E5478D-13F3-4C8F-BA7A-20D223DB5AF3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Camada Transversal", "4. Camada Transversal", "{0BBCD4C9-2DBA-49D5-AD79-FA655A09303A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +44,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E808CB10-0D17-4EC1-9323-7084C62304BA} = {EC5EE0EE-B7CD-4360-B5C4-AA6FF7D7372D}
+		{9AE483BB-238E-4698-A54F-F9E0364DF8FF} = {68F46C52-1ABC-4D3D-A964-421235F3D4DD}
+		{FE2E337C-19A3-455F-982A-99BF1F0874E8} = {95E5478D-13F3-4C8F-BA7A-20D223DB5AF3}
+		{4BB173D5-D397-4740-B887-2336EC8DD4C9} = {0BBCD4C9-2DBA-49D5-AD79-FA655A09303A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FD725D20-4A7D-41D9-A333-F046DC2537EE}

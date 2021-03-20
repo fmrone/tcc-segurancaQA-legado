@@ -120,10 +120,15 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ChecklistController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NormaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Checklist\ChecklistModel.cs" />
+    <Compile Include="Models\Checklist\ChecklistNormaModel.cs" />
+    <Compile Include="Models\Norma\NormaModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -159,13 +164,13 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Cheklist\Index.cshtml" />
+    <Content Include="Views\Cheklist\Normas.cshtml" />
+    <Content Include="Views\Norma\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -188,6 +193,10 @@
     <ProjectReference Include="..\Tcc.SegurancaQA.Legado.DAL\Tcc.SegurancaQA.Legado.Data.csproj">
       <Project>{fe2e337c-19a3-455f-982a-99bf1f0874e8}</Project>
       <Name>Tcc.SegurancaQA.Legado.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tcc.SegurancaQA.Legado.Dto\Tcc.SegurancaQA.Legado.Dto.csproj">
+      <Project>{4BB173D5-D397-4740-B887-2336EC8DD4C9}</Project>
+      <Name>Tcc.SegurancaQA.Legado.Dto</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

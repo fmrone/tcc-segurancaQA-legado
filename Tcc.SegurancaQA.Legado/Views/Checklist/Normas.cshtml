@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Tcc.SegurancaQA.Legado.Mvc.Models.Checklist.ChecklistNormaModel>
+
+@{
+    ViewBag.Title = "Normas";
+}
+
+<h2>Normas</h2>
+
+<p>
+    @Html.ActionLink("Voltar", "Index")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CodigoNorma)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DescricaoNorma)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NormaAtendida)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodigoNorma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescricaoNorma)
+            </td>
+            <td>
+                @Html.CheckBoxFor(modelItem => item.NormaAtendida.Value, new { value = item.NormaId, id = "chk_" + @item.NormaId, @checked = "checked", Name = "CheckBox" })
+            </td>
+        </tr>
+    }
+
+    <tr>
+        <td colspan="3" align="right">
+            <input type="submit" value="Finalizar" class="btn btn-default" />
+        </td>
+    </tr>
+
+</table>

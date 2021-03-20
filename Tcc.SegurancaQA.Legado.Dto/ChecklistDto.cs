@@ -10,7 +10,7 @@ namespace Tcc.SegurancaQA.Legado.Dto
         public int Id { get; set; }//PK
         public string Responsavel { get; set; }
         public EArea Area { get; set; }
-        public DateTime RealizadoEm { get; set; }
+        public DateTime? RealizadoEm { get; set; }
         public string Observacao { get; set; }
     }
 }

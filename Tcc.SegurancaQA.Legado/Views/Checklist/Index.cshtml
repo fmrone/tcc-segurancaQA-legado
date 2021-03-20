@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Tcc.SegurancaQA.Legado.Mvc.Models.Checklist.ChecklistModel>
+
+@{
+    ViewBag.Title = "Cheklists";
+}
+
+<h2>Checklists</h2>
+
+<table class="table">
+    <tr>
+        <th>Responsável</th>
+        <th>Area</th>
+        <th>Status</th>
+        <th>Realizado Em</th>
+        <th>Observação</th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model) 
+    {
+        <tr>
+            <td>@Html.DisplayFor(m => item.Responsavel)</td>
+            <td>@Html.DisplayFor(m => item.Area)</td>
+            <td>@Html.Raw(item.Status)</td>
+            <td>@Html.DisplayFor(m => item.RealizadoEm)</td>
+            <td>@Html.DisplayFor(m => item.Observacao)</td>
+            <td>
+                @Html.ActionLink("Normas", "Normas", new { checklistId = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
